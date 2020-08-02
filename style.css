@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed&display=swap');
+
+:root,
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Fira Sans Condensed', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-family: inherit;
+}
+
+p {
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+#doc {
+    display: flex;
+    width: 100vw;
+    min-height: 600px;
+}
+
+#main {
+    width: 70vw;
+    background-color: cornsilk;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+#header-row {
+    display: flex;
+    align-items: center;
+}
+
+img {
+    border-radius: 50%;
+}
+
+h1 {
+    margin-left: 30px;
+    font-size: 3em;
+}
+
+#side-bar {
+    width: 30vw;
+    background-color: cadetblue;
+    padding: 50px 30px;
+    color: antiquewhite;
+}
+
+#side-bar a {
+    color: beige;
+}
+
+
+.skill {
+    background-color: #00000088;
+    display: flex;
+    justify-content: flex-start;
+    border-radius: 25px;
+}
+
+.skill-marker {
+    width: 90%;
+    height: 18px;
+    background-color: cornsilk;
+    display: flex;
+    justify-content: center;
+    border-radius: inherit;
+    margin: 2px;
+}
+
+
+@media screen and (max-width: 470px) {
+    #main {
+        background-color: azure;
+    }
+
+    #header-row {
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    #side-bar {
+        padding: 10px;
+    }
+
+    #side-bar p {
+        font-size: 0.7em;
+        word-break: break-all;
+    }
+
+    .skill-marker {
+        height: 10px;
+    }
+
+    #side-bar h2 {
+        font-size: 1.2em;
+    }
+
+    #side-bar h4 {
+        font-size: 0.9em;
+    }
+}
+
+@media screen and (min-width: 471px) and (max-width: 720px) {}
