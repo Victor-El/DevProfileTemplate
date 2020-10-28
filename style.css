@@ -81,8 +81,18 @@ h1 {
 
 
 @media screen and (max-width: 470px) {
+
+    #doc {
+        flex-direction: column;
+    }
+
     #main {
         background-color: azure;
+        width: 100vw;
+    }
+
+    #profile-row > h2 {
+        visibility: hidden;
     }
 
     #header-row {
@@ -95,11 +105,16 @@ h1 {
 
     #side-bar {
         padding: 10px;
+        width: 100vw;
     }
 
     #side-bar p {
         font-size: 0.7em;
         word-break: break-all;
+    }
+
+    .skill {
+        width: 90%;
     }
 
     .skill-marker {
